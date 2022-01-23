@@ -5,10 +5,13 @@ import  Index  from './Components/Layout/Index'
 import Navbar from './Components/Layout/Navbar'
 
 
+import { Provider } from './context';
+
 
 class App extends Component {
   render() {
     return (
+      <Provider>
       <Router>
     <React.Fragment>
         <Navbar />
@@ -19,6 +22,7 @@ class App extends Component {
         </div>
     </React.Fragment>
      </Router>
+     </Provider>
     );
             
   }
